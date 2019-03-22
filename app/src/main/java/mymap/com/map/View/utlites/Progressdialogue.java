@@ -14,7 +14,7 @@ import mymap.com.map.View.utlites.loading.rotate.RotateLoading;
 
 
 /**
- * Created by CDS125 on 23-02-2018.
+ * Created by Senthil on 10-02-2018.
  */
 
 public class Progressdialogue {

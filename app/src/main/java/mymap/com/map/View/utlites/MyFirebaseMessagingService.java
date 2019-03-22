@@ -16,7 +16,7 @@ import mymap.com.map.R;
 import mymap.com.map.View.activitites.MainActivity;
 
 /**
- * Created by CDS124 on 08-02-2018.
+ * Created by Senthil on 10-02-2018.
  */
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
     @Override

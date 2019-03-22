@@ -4,7 +4,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Created by CDS124 on 10-02-2018.
+ * Created by Senthil on 10-02-2018.
  */
 
 public class ApiError {

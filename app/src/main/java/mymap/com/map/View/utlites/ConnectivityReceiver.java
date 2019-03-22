@@ -8,7 +8,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
 /**
- * Created by Cogniti Digital Solutions.
+ * Created by Senthil on 10-02-2018.
  */
 
 public class ConnectivityReceiver extends BroadcastReceiver {

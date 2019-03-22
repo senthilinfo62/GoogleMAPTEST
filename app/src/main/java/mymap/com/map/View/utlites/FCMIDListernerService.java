@@ -6,7 +6,7 @@ import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
 
 /**
- * Created by Cogniti Digital Solutions.
+ * Created by Senthil on 10-02-2018.
  */
 
 public class FCMIDListernerService extends FirebaseInstanceIdService {

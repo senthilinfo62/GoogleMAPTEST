@@ -10,9 +10,8 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
-
 /**
- * Created by CDS124 on 23-02-2018.
+ * Created by Senthil on 10-02-2018.
  */
 
 public class Utility {

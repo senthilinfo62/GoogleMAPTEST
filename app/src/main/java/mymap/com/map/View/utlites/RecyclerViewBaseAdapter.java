@@ -4,7 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
 /**
- * Created by Cogniti Digital Solutions.
+ * Created by Senthil on 10-02-2018.
  */
 
 public abstract class RecyclerViewBaseAdapter<VH extends RecyclerView.ViewHolder> extends RecyclerView.Adapter<VH> {

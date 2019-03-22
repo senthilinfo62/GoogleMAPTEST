@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 import okhttp3.OkHttpClient;
 
 /**
- * Created by Cogniti Digital Solutions.
+ * Created by Senthil on 10-02-2018.
  */
 
 public class AppController extends Application {
