@@ -1,6 +1,11 @@
 package mymap.com.map.View.utlites;
 
 import android.Manifest;
+import android.content.Context;
+import android.content.Intent;
+import android.location.LocationManager;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 public class AppConstants {
 
@@ -39,8 +44,12 @@ public class AppConstants {
                     Manifest.permission.READ_CONTACTS, Manifest.permission.WRITE_CONTACTS
             };
 
-
-
+    public static final String LOGIN_SESSION_OTP = "OTP";
+    public static final String LOGIN_SESSION_OTP_STATUS = "OTP_Status";
+    public static final String LOGIN_SESSION_USER_DEVICETOKEN = "";
+    public static String mapAddress = "";
+    public static int appTracling = 0;
+    public static int addChild = 0;
     public static final String CAMERA_PERMISSIONS =
             Manifest.permission.CAMERA;
     public static final String[] LOCATION_PERMISSIONS = {
@@ -50,4 +59,18 @@ public class AppConstants {
     public static final String[] STORAGE_PERMISSIONS = {
             Manifest.permission.READ_EXTERNAL_STORAGE,
             Manifest.permission.WRITE_EXTERNAL_STORAGE};
+
+    public static void turnGpsOn(final Context context) {
+        final AppPermissions mRuntimePermission = new AppPermissions((AppCompatActivity) context);
+        LocationManager locationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
+        if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+            context.startActivity(new Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+            mRuntimePermission.requestPermission(AppConstants.ALL_PERMISSIONS, AppConstants.ALL_REQUEST_CODE);
+        }
+        else {
+            Toast.makeText(context, "Gps enabled", Toast.LENGTH_SHORT).show();
+        }
+        return;
+    }
+
 }
